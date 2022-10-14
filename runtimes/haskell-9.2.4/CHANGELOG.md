@@ -1,4 +1,4 @@
-# Revision history for haskell-9.2.4
+# Revision history for runtime
 
 ## 0.1.0.0 -- YYYY-mm-dd
 

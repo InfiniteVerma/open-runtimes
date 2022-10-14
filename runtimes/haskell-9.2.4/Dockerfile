@@ -21,14 +21,5 @@ RUN cabal build --only-dependencies -j4
 COPY . .
 RUN cabal install
 
-CMD ["example"]
 
-RUN ["chmod", "+x", "/usr/local/src/build.sh"]
-RUN ["chmod", "+x", "/usr/local/src/start.sh"]
-
-EXPOSE 3000
-
-CMD ["/usr/local/src/start.sh"]
-
-RUN cabal update && cabal install pandoc citeproc
-ENTRYPOINT ["pandoc"]
+RUN chmod +x /usr/local/src/build.sh
